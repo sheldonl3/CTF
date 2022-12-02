@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-infile = file("flag.png", "rb")
-#outfile = file("out.txt", "wb")
+infile = open("flag.png", "rb")
+
+
+# outfile = file("out.txt", "wb")
 
 
 def main():
@@ -16,15 +18,14 @@ def main():
     infile.close()
     # outfile.writelines(hex_list)
     # outfile.close()
-    ccfile = file("cc.png", "wb")
+    ccfile = open("cc.png", "wb")
     for x in hex_list:
         if len(x) == 1:
             x = '0' + x
-        print x
+        print
+        x
         ccfile.write(x.decode("hex"))
+
 
 if __name__ == '__main__':
     main()
-
-
-
