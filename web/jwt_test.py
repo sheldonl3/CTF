@@ -1,5 +1,8 @@
 import jwt
 
+'''
+必须使用老版本的pyjwt库，才能把公钥用做对称算法的密钥）
+'''
 public = """-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs+/Ju0JZqKk5Y6EslP+r
 KYo01bNzBqK3m3QgD9hgSbLOg0vNUKlYRaCXzQAcavRrjG+GkT2siIcVJmkaI7ij
