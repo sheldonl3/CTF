@@ -12,6 +12,6 @@ d = gmpy2.invert(e, phin)
 
 key = rsa.PrivateKey(n, e, int(d), p, q)
 
-with open("flag.enc", "rb+") as f:
+with open("../其他/flag.enc", "rb+") as f:
     f = f.read()
     print(rsa.decrypt(f, key))
