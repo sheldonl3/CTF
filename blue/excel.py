@@ -1,7 +1,8 @@
 import os
-
 import pandas as pd
-
+"""
+对绿盟漏扫设备输出的主机扫描结果进行处理，找出所有扫描出开发的端口，整理在一个excel中
+"""
 df = pd.DataFrame([])
 
 
