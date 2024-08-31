@@ -22,8 +22,7 @@ def main():
     for x in hex_list:
         if len(x) == 1:
             x = '0' + x
-        print
-        x
+        print(x)
         ccfile.write(x.decode("hex"))
 
 
