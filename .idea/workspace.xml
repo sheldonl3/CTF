@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3a4be7f-5277-4ac6-9510-ca3445c3b37a" name="Changes" comment="题目2进制附件上传">
-      <change afterPath="$PROJECT_DIR$/sql/sql布尔.py" afterDir="false" />
+    <list default="true" id="e3a4be7f-5277-4ac6-9510-ca3445c3b37a" name="Changes" comment="[WUSTCTF2020]颜值成绩查讯-sql布尔注入">
+      <change afterPath="$PROJECT_DIR$/web/PCRE回溯次数限制绕过RCE.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,76 +64,77 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.DangerousRSA.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DeepSeekSelfTool.executor&quot;: &quot;Run&quot;,
-    &quot;Python.QR.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RSA.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RSA2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RSA3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RSAde.executor&quot;: &quot;Run&quot;,
-    &quot;Python.[强网杯 2019]高明的黑客.executor&quot;: &quot;Run&quot;,
-    &quot;Python.[极客大挑战 2019]FinalSQL.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ascii.executor&quot;: &quot;Run&quot;,
-    &quot;Python.attachment.executor&quot;: &quot;Run&quot;,
-    &quot;Python.baby_rsa.executor&quot;: &quot;Run&quot;,
-    &quot;Python.baby_rsa2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.baopo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.base64.executor&quot;: &quot;Run&quot;,
-    &quot;Python.base64隐写.executor&quot;: &quot;Run&quot;,
-    &quot;Python.brainbuck解码.executor&quot;: &quot;Run&quot;,
-    &quot;Python.crypto-rsa3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cs流量分析.executor&quot;: &quot;Run&quot;,
-    &quot;Python.excel (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.excel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fff.executor&quot;: &quot;Run&quot;,
-    &quot;Python.flask session 伪造.executor&quot;: &quot;Run&quot;,
-    &quot;Python.kaisa.executor&quot;: &quot;Run&quot;,
-    &quot;Python.keyboard.executor&quot;: &quot;Run&quot;,
-    &quot;Python.n&amp;c.executor&quot;: &quot;Run&quot;,
-    &quot;Python.nengyuandasai.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pacp.executor&quot;: &quot;Run&quot;,
-    &quot;Python.png_change_height_with.executor&quot;: &quot;Run&quot;,
-    &quot;Python.png_height.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rsa1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rsa2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rsa4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rsa_roll.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sha256.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sha256_md5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sql布尔.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sql布尔注入.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task.executor&quot;: &quot;Run&quot;,
-    &quot;Python.vigenere.executor&quot;: &quot;Run&quot;,
-    &quot;Python.布尔盲注.executor&quot;: &quot;Run&quot;,
-    &quot;Python.维吉尼亚解密工具.executor&quot;: &quot;Run&quot;,
-    &quot;Python.蚁剑chr编码转换 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.蚁剑chr编码转换.executor&quot;: &quot;Run&quot;,
-    &quot;Python.词频统计.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;ToolWindowPython 软件包.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/CTF/pwn&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.DangerousRSA.executor": "Run",
+    "Python.DeepSeekSelfTool.executor": "Run",
+    "Python.PCRE回溯次数限制绕过RCE.executor": "Run",
+    "Python.QR.executor": "Run",
+    "Python.RSA.executor": "Run",
+    "Python.RSA2.executor": "Run",
+    "Python.RSA3.executor": "Run",
+    "Python.RSAde.executor": "Run",
+    "Python.[强网杯 2019]高明的黑客.executor": "Run",
+    "Python.[极客大挑战 2019]FinalSQL.executor": "Run",
+    "Python.ascii.executor": "Run",
+    "Python.attachment.executor": "Run",
+    "Python.baby_rsa.executor": "Run",
+    "Python.baby_rsa2.executor": "Run",
+    "Python.baopo.executor": "Run",
+    "Python.base64.executor": "Run",
+    "Python.base64隐写.executor": "Run",
+    "Python.brainbuck解码.executor": "Run",
+    "Python.crypto-rsa3.executor": "Run",
+    "Python.cs流量分析.executor": "Run",
+    "Python.excel (1).executor": "Run",
+    "Python.excel.executor": "Run",
+    "Python.fff.executor": "Run",
+    "Python.flask session 伪造.executor": "Run",
+    "Python.kaisa.executor": "Run",
+    "Python.keyboard.executor": "Run",
+    "Python.n&c.executor": "Run",
+    "Python.nengyuandasai.executor": "Run",
+    "Python.pacp.executor": "Run",
+    "Python.png_change_height_with.executor": "Run",
+    "Python.png_height.executor": "Run",
+    "Python.rot.executor": "Run",
+    "Python.rsa1.executor": "Run",
+    "Python.rsa2.executor": "Run",
+    "Python.rsa4.executor": "Run",
+    "Python.rsa_roll.executor": "Run",
+    "Python.sha256.executor": "Run",
+    "Python.sha256_md5.executor": "Run",
+    "Python.sql布尔.executor": "Run",
+    "Python.sql布尔注入.executor": "Run",
+    "Python.task.executor": "Run",
+    "Python.vigenere.executor": "Run",
+    "Python.布尔盲注.executor": "Run",
+    "Python.维吉尼亚解密工具.executor": "Run",
+    "Python.蚁剑chr编码转换 (1).executor": "Run",
+    "Python.蚁剑chr编码转换.executor": "Run",
+    "Python.词频统计.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ToolWindowPython 软件包.ShowToolbar": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/CTF/pwn",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "http.proxy",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\PycharmProjects\CTF\pwn" />
@@ -150,7 +151,7 @@
       <recent name="C:\Users\User\PycharmProjects\CTF\pwn\ret2libc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.baby_rsa">
+  <component name="RunManager" selected="Python.PCRE回溯次数限制绕过RCE">
     <configuration name="维吉尼亚解密工具" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,6 +168,29 @@
       <module name="" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crypto/其他/维吉尼亚解密工具.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PCRE回溯次数限制绕过RCE" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CTF" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/PCRE回溯次数限制绕过RCE.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -296,14 +320,16 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.维吉尼亚解密工具" />
-      <item itemvalue="Python.brainbuck解码" />
-      <item itemvalue="Python.keyboard" />
-      <item itemvalue="Python.sql布尔注入" />
       <item itemvalue="Python.baby_rsa" />
+      <item itemvalue="Python.PCRE回溯次数限制绕过RCE" />
+      <item itemvalue="Python.维吉尼亚解密工具" />
+      <item itemvalue="Python.sql布尔注入" />
+      <item itemvalue="Python.keyboard" />
+      <item itemvalue="Python.brainbuck解码" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PCRE回溯次数限制绕过RCE" />
         <item itemvalue="Python.维吉尼亚解密工具" />
         <item itemvalue="Python.sql布尔注入" />
         <item itemvalue="Python.keyboard" />
@@ -551,7 +577,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765466975605</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="[WUSTCTF2020]颜值成绩查讯-sql布尔注入">
+      <option name="closed" value="true" />
+      <created>1768359721966</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1768359721966</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +617,8 @@
     <MESSAGE value="buu" />
     <MESSAGE value="2025北京公司比赛" />
     <MESSAGE value="题目2进制附件上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="题目2进制附件上传" />
+    <MESSAGE value="[WUSTCTF2020]颜值成绩查讯-sql布尔注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="[WUSTCTF2020]颜值成绩查讯-sql布尔注入" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CTF$nengyuandasai.coverage" NAME="nengyuandasai 覆盖结果" MODIFIED="1744858036353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/rsa" />
