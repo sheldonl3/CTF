@@ -8,5 +8,5 @@ for ip in ips:
     print(url)
     r = requests.post(url, data=data)  #post执行
     x = r.text
-    flag=re.search('[a-z0-9]{32}',x)
+    flag=re.search('flag\{[a-zA-Z0-9_-]+\}',x)
     print(url,flag.group())

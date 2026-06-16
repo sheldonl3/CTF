@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3a4be7f-5277-4ac6-9510-ca3445c3b37a" name="Changes" comment="awd">
-      <change afterPath="$PROJECT_DIR$/awd/kill.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awd/nodead.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awd/shell.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awd/命令执行.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awd/文件上传(登录).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awd/文件上传2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awd/文件包含.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/png.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/批量攻击.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/批量攻击.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/png_height.py" beforeDir="false" afterPath="$PROJECT_DIR$/misc/png_height.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awd/命令执行.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/命令执行.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -632,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781426314782</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="awd">
+      <option name="closed" value="true" />
+      <created>1781600824057</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1781600824057</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
