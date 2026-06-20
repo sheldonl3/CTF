@@ -58,8 +58,7 @@ def get_flag(ip_list):
         futures = {executor.submit(attack, ip): ip for ip in ip_list}
         for future in as_completed(futures):
             ip, flag = future.result()
-            if flag:
-                flag_dict[ip] = flag
+            flag_dict[ip] = flag
 
     # 写入结果文件
     if flag_dict:

@@ -1,12 +1,10 @@
-import requests
+import socket
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 
-# from requests.packages.urllib3.exceptions import InsecureRequestWarning
-
 # 配置参数
 IP_RANGE = range(0, 255)
-PORTS = [80]  # 可扩展常见Web端口
+PORTS = 1337  # 可扩展常见Web端口
 TIMEOUT = 3
 THREADS = 20
 # 精确屏蔽 InsecureRequestWarning 警告
@@ -19,21 +17,25 @@ def process_host():  # 探活
 
     """并发探活，返回可达IP列表"""
     live_ips = []
-    base_ips = [f"192.168.{i}.2" for i in IP_RANGE]
+    base_ips = [f"192.168.{i}.3" for i in IP_RANGE]
 
-    def check_ip(ip):
-        for port in PORTS:
-            try:
-                r = requests.get(f"http://{ip}:{port}", timeout=TIMEOUT)
-                if 200 <= r.status_code < 500:  # 视为存活
-                    logging.info(f"{ip}:{port} alive")
-                    return ip  # 只要有一个端口成功即认为存活
-            except:
-                continue
+    def scan_host(ip):
+        """扫描单个主机是否开放PWN端口"""
+        try:
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+                sock.settimeout(1)
+                result = sock.connect_ex((str(ip), PORTS))
+                if result == 0:
+                    logging.info(f"{ip}:{PORTS} alive")
+                    return ip
+                else:
+                    logging.info(f"{ip}:{PORTS} not alive")
+        except Exception as e:
+            print(e)
         return None
 
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
-        futures = {executor.submit(check_ip, ip): ip for ip in base_ips}
+        futures = {executor.submit(scan_host, ip): ip for ip in base_ips}
         for future in as_completed(futures):
             result = future.result()
             if result:

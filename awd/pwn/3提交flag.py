@@ -55,7 +55,6 @@ Content-Length: 37
 
 {"data":null,"msg":"答案正确！"}
 '''
-import re
 import requests
 from time import sleep
 import logging
@@ -63,10 +62,8 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 # 精确屏蔽 InsecureRequestWarning 警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-# 配置日志
+# 配置
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-# 配置参数
 QUESTION_ID = "90122"
 
 
@@ -89,7 +86,7 @@ def upload_flag(flag_dict):
         "Referer": "https://172.19.6.100/competition_web/",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "Accept-Language": "zh-CN,zh;q=0.9",
-        "Cookie": "um_auth=1; sso_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVVUlEIjoiMjMzYWJiZjAtYzAzMS00MGQ4LWEzODctNDU5ODI5MGMyY2MzIiwiSUQiOjkwLCJVc2VybmFtZSI6InVzZXI4NiIsIk5pY2tOYW1lIjoidXNlcjg2IiwiSXNTdXBlciI6ZmFsc2UsIkxhc3RMb2dpbkF0IjoiMjAyNi0wNi0xOFQyMTowNDozNy4wNDM0NzYyOTQrMDg6MDAiLCJCdWZmZXJUaW1lIjowLCJpc3MiOiJxbVBsdXMiLCJuYmYiOjE3ODE3ODY4Nzd9.2P20iiNX9A7bTDaU1feQ2C7Cl-cND3pZbww9g8GchZA; competition_session=MTc4MTc4NzgwMnxOd3dBTkRjMU5GcE5WVmxYU3pORE4wY3lSa3RVTkVoYVJ6TkdWRmd5U0ZsSlRVNVlSRFZLU1VSS1NrOUNSMUZTTWxWR01sQkpTbEU9fGxfegurUX-usTdtd4GMFjfO8Uw5zY7ZPv33bKxYzckM",
+        "Cookie": "sso_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVVUlEIjoiMjMzYWJiZjAtYzAzMS00MGQ4LWEzODctNDU5ODI5MGMyY2MzIiwiSUQiOjkwLCJVc2VybmFtZSI6InVzZXI4NiIsIk5pY2tOYW1lIjoidXNlcjg2IiwiSXNTdXBlciI6ZmFsc2UsIkxhc3RMb2dpbkF0IjoiMjAyNi0wNi0xOFQyMjoxNTo1OC4zNTE4ODA1MDgrMDg6MDAiLCJCdWZmZXJUaW1lIjowLCJpc3MiOiJxbVBsdXMiLCJuYmYiOjE3ODE3OTExNTh9.UeGdef-Nx4fd9uQPT_MqgHJ3H3pLRnbhglQjI8qhQJo; um_auth=1; competition_session=MTc4MTkxNDk3NnxOd3dBTkVOT1R6UlFVRWhXU0VvMVZraGFXRkV5UlRSWVVGSk5XRVpVVFUxU1RVZEJSa1JKVmxSWVVVMDNVRlpSUjFOVVUwazBXRkU9fJo3Pm9FBsCQianTLiGOdTE8jx1BTCScAdtOhR7CHnMJ"
     }
     # 忽略证书验证（内网自签名）
     session = requests.Session()
@@ -98,25 +95,22 @@ def upload_flag(flag_dict):
         f.write("提交flag失败\n")
     with open("upload_res.txt", "a", encoding="utf-8") as f:
         for ip, flag in flag_dict.items():
-            if flag:
-                payload = {"answer": flag}
-                try:
-                    resp = session.post(url, json=payload, headers=headers, timeout=5)
-                    # 解析返回消息（假设返回json格式）
-                    if resp.status_code == 200:
-                        msg = resp.json().get("msg", "unknown")
-                        logging.info(f"{ip} upload success: {msg}")
-                    else:
-                        msg = resp.json().get("msg", "unknown")
-                        logging.error(f"{ip} upload failed, status {resp.status_code}, {msg}")
-                        # 写入结果文件
-                        f.write(f"{ip} upload failed, status {resp.status_code}  {msg} 写入失败，自行写入\n")
-                except Exception as e:
-                    logging.error(f"{ip} upload exception: {e}")
-                    f.write(f"{ip} error, status {resp.status_code}  {msg} 写入失败，自行写入{flag}\n")
-                sleep(20)
-            else:
-                pass
+            payload = {"answer": flag}
+            try:
+                resp = session.post(url, json=payload, headers=headers, timeout=5)
+                # 解析返回消息（假设返回json格式）
+                if resp.status_code == 200:
+                    msg = resp.json().get("msg", "unknown")
+                    logging.info(f"{ip} upload success: {msg}")
+                else:
+                    msg = resp.json().get("msg", "unknown")
+                    logging.error(f"{ip} upload failed, status {resp.status_code}, {msg}")
+                    # 写入结果文件
+                    f.write(f"{ip} upload failed, status {resp.status_code}  {msg} 写入失败，自行写入\n")
+            except Exception as e:
+                logging.error(f"{ip} upload exception: {e}")
+                f.write(f"{ip} error, status {resp.status_code}  {msg} 写入失败，自行写入{flag}\n")
+            sleep(20)
 
 
 if __name__ == "__main__":
