@@ -6,7 +6,7 @@ import logging
 
 # 配置参数
 IP_RANGE = range(0, 255)
-PORTS = [80]  # 可扩展常见Web端口
+PORTS = [8801,8802,8803,8804,8805]  # 可扩展常见Web端口
 TIMEOUT = 3
 THREADS = 20
 # 精确屏蔽 InsecureRequestWarning 警告
@@ -19,8 +19,8 @@ def process_host():  # 探活
 
     """并发探活，返回可达IP列表"""
     live_ips = []
-    base_ips = [f"192-168-1-{i}" for i in IP_RANGE]
-
+    #base_ips = [f"192-168-1-{i}" for i in IP_RANGE]
+    base_ips = [f"156.239.238.67"]
     def check_ip(ip):
         for port in PORTS:
             try:
@@ -40,7 +40,7 @@ def process_host():  # 探活
                 live_ips.append(result)
 
     # 写入文件（可选）
-    with open("../后门/ip.txt", "w", encoding="utf-8") as f:
+    with open("ip.txt", "w", encoding="utf-8") as f:
         for ip in live_ips:
             f.write(ip + "\n")
     return live_ips

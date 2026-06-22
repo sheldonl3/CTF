@@ -70,6 +70,6 @@ def get_flag(ip_list):
 
 
 if __name__ == "__main__":
-    with open("ip.txt", "r", encoding="utf-8") as f:
+    with open("../后门/ip.txt", "r", encoding="utf-8") as f:
         ip_list = f.readlines()
     get_flag(ip_list)

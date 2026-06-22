@@ -1,0 +1,83 @@
+SSH密码修改:
+passwd
+
+mysql密码修改:
+
+myaql
+show databases;
+use mysql
+set password for root@localhost = password('123');
+
+
+打包
+tar -zcvf archive_name.tar.gz  directory_to_compress
+注意：如果使用tar命令打包文件夹，.index.php（隐藏类型文件）将不会被打包
+
+备份整站
+cd /var/www && tar -czvf /tmp/html.tgz html
+
+解包
+tar -zxvf html.tgz
+
+备份数据库
+mysqldump -uroot -proot  > /tmp/db.sql
+
+
+无 lock tables 权限的解决方法
+
+mysqldump -uroot -p334cc35b3c704593 --all-databases --skip-lock-tables > /tmp/db.sql
+
+恢复备份
+source db.sql
+
+
+
+GET连接
+=var_dump(system(cat /flag));
+
+文件上锁
+chattr +i wenjian
+查看是否加锁文件
+lsattr 文件
+解锁文件
+chattr -i 文件
+
+
+查看端口
+netstat -nultp
+
+
+web
+/etc/nginx
+/etc/apache2
+
+pwn
+/etc/xinetd.b
+/home/...
+
+黑名单
+ip.php
+<?php
+$banned-ip =array(
+""
+);
+if (in_array( getenv(“REMOTE_ADDR”), $banned_ip))
+{
+die ("不可以进来哦")；
+}
+?>
+放到index.php文件里
+include '1p.php';
+
+# 杀不死马, 将 check_ctffff.php 换成不死马的名字
+echo '
+#!/bin/bash
+while true
+	do
+		rm -rf ./.check1.php
+	done
+' > busi.sh;bash busi.sh &
+
+
+
+

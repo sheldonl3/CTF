@@ -19,9 +19,9 @@ Accept-Language: zh-CN,zh;q=0.9
 Cookie: sso_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVVUlEIjoiOTlhZjgzMTMtMzE3Yi00NzQzLTgzZWEtNjE3NDMyNWNmMzAyIiwiSUQiOjE3NCwiVXNlcm5hbWUiOiJ1c2VyMTcwIiwiTmlja05hbWUiOiJ1c2VyMTcwIiwiSXNTdXBlciI6ZmFsc2UsIkxhc3RMb2dpbkF0IjoiMjAyNi0wNi0xN1QxNzoxNzoxOS4yOTMxNTY5NjMrMDg6MDAiLCJCdWZmZXJUaW1lIjowLCJpc3MiOiJxbVBsdXMiLCJuYmYiOjE3ODE2ODY4Mzl9.zYKJ9P-dIsctzR0iZun_T0x71wITFbRVLrqJ6VqaCBI; um_auth=1; competition_session=MTc4MTY4NzQxNnxOd3dBTkVveVZGTlRSMUUwVGxCVldEWTJORlZSVUZKT1FWWlpTa3hQTjBGV1VVWkZWMFZRV1ZrM1MwVldSMFpHVGtKSlJFTmFOMUU9fGB1_swchU_FzTPg0MPpBqm-gNLenWxirIZHETe36sMI
 
 {"answer":"flag{88b4e2a3-8171-4483-b298-21f6eae06c4d}"}
-'''
 
-'''
+
+
 POST /competition/api/contestants/match_plan/90118/question/awd HTTP/1.1
 Host: 172.19.6.100
 Connection: keep-alive
@@ -42,9 +42,10 @@ Accept-Language: zh-CN,zh;q=0.9
 Cookie: sso_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVVUlEIjoiOTlhZjgzMTMtMzE3Yi00NzQzLTgzZWEtNjE3NDMyNWNmMzAyIiwiSUQiOjE3NCwiVXNlcm5hbWUiOiJ1c2VyMTcwIiwiTmlja05hbWUiOiJ1c2VyMTcwIiwiSXNTdXBlciI6ZmFsc2UsIkxhc3RMb2dpbkF0IjoiMjAyNi0wNi0xN1QxNzoxNzoxOS4yOTMxNTY5NjMrMDg6MDAiLCJCdWZmZXJUaW1lIjowLCJpc3MiOiJxbVBsdXMiLCJuYmYiOjE3ODE2ODY4Mzl9.zYKJ9P-dIsctzR0iZun_T0x71wITFbRVLrqJ6VqaCBI; um_auth=1; competition_session=MTc4MTY4NzU2MXxOd3dBTkVveVZGTlRSMUUwVGxCVldEWTJORlZSVUZKT1FWWlpTa3hQTjBGV1VVWkZWMFZRV1ZrM1MwVldSMFpHVGtKSlJFTmFOMUU9fANF_pFF9nf6PbM0hBMpcwaiQNtBV45eOp8q1bBzUY0P
 
 {"answer":"flag{fbd0dd40-938e-4c25-ad5a-5a878f193a86}"}
-'''
 
-'''
+
+
+
 HTTP/1.1 200 OK
 Server: nginx
 Date: Wed, 17 Jun 2026 09:25:46 GMT
@@ -55,7 +56,7 @@ Content-Length: 37
 
 {"data":null,"msg":"答案正确！"}
 '''
-import re
+
 import requests
 from time import sleep
 import logging

