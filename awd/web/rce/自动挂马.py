@@ -114,6 +114,7 @@ def upload_muma2(upload_res):
                         file_put_contents($file, $code); 
                         system('touch -m -d "2018-01-01 00:00:00" ' . $file); 
                         file_put_contents('.config1.php',$code);
+                        //system('chmod 777 .index2.php'); 
                         file_put_contents('.app.php',$code);
                         file_put_contents('.index.php',$code);
                         usleep(0); 

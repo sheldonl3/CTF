@@ -20,5 +20,5 @@ for port in range(8800,8880):
     if "True" in str(is_open):
         ip = host+':'+str(port)
         print(host+':'+str(port))
-        with open("./ip.txt", 'a', encoding='UTF-8') as f: 
+        with open("../攻击主机/ip.txt", 'a', encoding='UTF-8') as f:
             f.write(f"http://{ip}/\n")

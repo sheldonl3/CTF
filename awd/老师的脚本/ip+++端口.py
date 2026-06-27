@@ -14,8 +14,8 @@ def check_port(host, port):
         # 如果连接失败，返回False
         return False
 
-if os.path.exists("ip.txt"):
-    os.remove("ip.txt")
+if os.path.exists("../攻击主机/ip.txt"):
+    os.remove("../攻击主机/ip.txt")
 port=80
 for num in range(0,256):
     host = f'192-168-1-{num}.pvp7485.bugku.cn'
@@ -23,6 +23,6 @@ for num in range(0,256):
     if "True" in str(is_open):
         ip = host+':'+str(port)
         print(host+':'+str(port))
-        with open("./ip.txt", 'a', encoding='UTF-8') as f: 
+        with open("../攻击主机/ip.txt", 'a', encoding='UTF-8') as f:
             f.write(f"http://{ip}/\n")
 

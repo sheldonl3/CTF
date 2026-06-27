@@ -56,7 +56,7 @@ def change_password(hostname):
 ip = []
 
 # 打开文件
-with open('./ip.txt', 'r', encoding='utf-8') as file:
+with open('../攻击主机/ip.txt', 'r', encoding='utf-8') as file:
     # 逐行读取
     line = file.readline()
     # 循环直到文件末尾

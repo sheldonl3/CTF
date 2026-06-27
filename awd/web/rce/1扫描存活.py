@@ -19,7 +19,7 @@ def process_host():  # 探活
 
     """并发探活，返回可达IP列表"""
     live_ips = []
-    base_ips = [f"192-168-{i}-2" for i in IP_RANGE]
+    base_ips = [f"192.168.{i}.2" for i in IP_RANGE]
 
     def check_ip(ip):
         for port in PORTS:
