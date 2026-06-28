@@ -5,6 +5,7 @@ from time import sleep
 import logging
 from requests.exceptions import ReadTimeout
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
+from awd.config import ownip_c
 
 '''
 利用服务器默认有的木马system.php 密码cmd,植入不死马，运行cat /flag，提交flag
@@ -28,7 +29,7 @@ PASSWD = "nima"
 def process_host():
     """并发探活，返回可达IP列表"""
     live_ips = []
-    base_ips = [f"192.168.{i}.2" for i in IP_RANGE]
+    base_ips = [f"192.168.{i}.2" for i in IP_RANGE if i !=ownip_c]
 
     def check_ip(ip):
         for port in PORTS:

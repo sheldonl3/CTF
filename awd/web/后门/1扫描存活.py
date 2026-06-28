@@ -1,6 +1,7 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
+from awd.config import ownip_c
 
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
@@ -19,7 +20,7 @@ def process_host():  # 探活
 
     """并发探活，返回可达IP列表"""
     live_ips = []
-    #base_ips = [f"192-168-1-{i}" for i in IP_RANGE]
+    #base_ips = [f"192.168.{i}.2" for i in IP_RANGE if i !=ownip_c]
     base_ips = [f"156.239.238.67"]
     def check_ip(ip):
         for port in PORTS:

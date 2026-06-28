@@ -5,6 +5,7 @@ import logging
 from time import sleep
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from awd.config import ownip_c
 
 # 精确屏蔽 InsecureRequestWarning 警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
@@ -44,7 +45,7 @@ headers = {
 def process_host():
     """并发探活，返回可达IP列表"""
     live_ips = []
-    base_ips = [f"192.168.{i}.3" for i in IP_RANGE]
+    ase_ips = [f"192.168.{i}.2" for i in IP_RANGE if i !=ownip_c]
 
     def check_ip(ip):
         for port in PORTS:

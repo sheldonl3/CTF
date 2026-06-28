@@ -1,6 +1,7 @@
 import socket
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
+from awd.config import ownip_c
 
 # 配置参数
 IP_RANGE = range(0, 255)
@@ -17,7 +18,7 @@ def process_host():  # 探活
 
     """并发探活，返回可达IP列表"""
     live_ips = []
-    base_ips = [f"192.168.{i}.3" for i in IP_RANGE]
+    base_ips = [f"192.168.{i}.2" for i in IP_RANGE if i != ownip_c]
 
     def scan_host(ip):
         """扫描单个主机是否开放PWN端口"""
