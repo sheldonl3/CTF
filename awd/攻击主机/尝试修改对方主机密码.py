@@ -10,7 +10,7 @@ def change_password_via_shell(hostname):
     port = 22
     username = 'ctf'
     old_password = '2233@#s'
-    new_password = '2233@#2s'
+    new_password = 'HLdf@2731'
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     try:

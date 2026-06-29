@@ -77,7 +77,7 @@ def scan_task():
     # 遍历扫描每个IP拿cookie
     for target_ip in all_ip:
         try:
-            url = target_ip + php + '?watchbird=ui&passwd=109longgezuishuai'
+            url = target_ip + php + '?watchbird=ui&passwd=HLdf@2731'
             resp1 = requests.get(url=url, timeout=5)
             print(f"[{target_ip}] 设置密码返回：{resp1.text}")
 

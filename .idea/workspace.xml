@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3a4be7f-5277-4ac6-9510-ca3445c3b37a" name="Changes" comment="awd">
-      <change afterPath="$PROJECT_DIR$/awd/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awd/sudo.py" afterDir="false" />
+    <list default="true" id="e3a4be7f-5277-4ac6-9510-ca3445c3b37a" name="Changes" comment="加白名单功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/pwn/1扫描存活.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/pwn/1扫描存活.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/web/rce/自动rce.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/web/rce/自动rce.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/web/rce/自动挂马.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/web/rce/自动挂马.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/web/后门/1扫描存活.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/web/后门/1扫描存活.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/web/后门/rec_muma.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/web/后门/rec_muma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/web/后门/自动传马.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/web/后门/自动传马.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/web/文件上传/自动文件上传.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/web/文件上传/自动文件上传.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/攻击主机/ip_ping探测.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/攻击主机/ip_ping探测.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/攻击主机/改WatchBird密码.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/awd/攻击主机/尝试修改对方主机密码.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/攻击主机/尝试修改对方主机密码.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awd/通防开关/ip探测.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/通防开关/ip探测.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awd/通防开关/保存cookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/通防开关/保存cookie.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,113 +67,114 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.1upload (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1扫描存活 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1扫描存活 (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1扫描存活.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2get_flag (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.2命令执行.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3提交flag (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.3提交flag.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DangerousRSA.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DeepSeekSelfTool.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PCRE回溯次数限制绕过RCE.executor&quot;: &quot;Run&quot;,
-    &quot;Python.QR.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RSA.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RSA2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RSA3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RSAde.executor&quot;: &quot;Run&quot;,
-    &quot;Python.[强网杯 2019]高明的黑客.executor&quot;: &quot;Run&quot;,
-    &quot;Python.[极客大挑战 2019]FinalSQL.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ascii.executor&quot;: &quot;Run&quot;,
-    &quot;Python.attachment.executor&quot;: &quot;Run&quot;,
-    &quot;Python.baby_rsa.executor&quot;: &quot;Run&quot;,
-    &quot;Python.baby_rsa2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.baopo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.base64.executor&quot;: &quot;Run&quot;,
-    &quot;Python.base64隐写.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bbb.executor&quot;: &quot;Run&quot;,
-    &quot;Python.brainbuck解码.executor&quot;: &quot;Run&quot;,
-    &quot;Python.crypto-rsa3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cs流量分析.executor&quot;: &quot;Run&quot;,
-    &quot;Python.excel (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.excel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.factor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fetus_pcap.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fff.executor&quot;: &quot;Run&quot;,
-    &quot;Python.flask session 伪造.executor&quot;: &quot;Run&quot;,
-    &quot;Python.get_flag.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ip.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ip_ping探测.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ip端口 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.ip端口(1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.ip端口.executor&quot;: &quot;Run&quot;,
-    &quot;Python.kaisa.executor&quot;: &quot;Run&quot;,
-    &quot;Python.keyboard.executor&quot;: &quot;Run&quot;,
-    &quot;Python.n&amp;c.executor&quot;: &quot;Run&quot;,
-    &quot;Python.nengyuandasai.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pacp.executor&quot;: &quot;Run&quot;,
-    &quot;Python.png_change_height_with.executor&quot;: &quot;Run&quot;,
-    &quot;Python.png_height.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rar.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rsa1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rsa2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rsa4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rsa_output.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rsa_roll.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sha256.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sha256_md5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sql布尔.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sql布尔注入.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ssti查找类索引.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.upload.executor&quot;: &quot;Run&quot;,
-    &quot;Python.vigenere.executor&quot;: &quot;Run&quot;,
-    &quot;Python.xor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.关闭通防.executor&quot;: &quot;Run&quot;,
-    &quot;Python.关闭通防参数.executor&quot;: &quot;Run&quot;,
-    &quot;Python.尝试修改对方主机密码.executor&quot;: &quot;Run&quot;,
-    &quot;Python.布尔盲注.executor&quot;: &quot;Run&quot;,
-    &quot;Python.批量攻击.executor&quot;: &quot;Run&quot;,
-    &quot;Python.提交flag.executor&quot;: &quot;Run&quot;,
-    &quot;Python.改WatchBird密码.executor&quot;: &quot;Run&quot;,
-    &quot;Python.改服务器密码.executor&quot;: &quot;Run&quot;,
-    &quot;Python.文件包含.executor&quot;: &quot;Run&quot;,
-    &quot;Python.维吉尼亚解密工具.executor&quot;: &quot;Run&quot;,
-    &quot;Python.自动flag (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.自动flag.executor&quot;: &quot;Run&quot;,
-    &quot;Python.自动传马.executor&quot;: &quot;Run&quot;,
-    &quot;Python.自动挂马.executor&quot;: &quot;Run&quot;,
-    &quot;Python.蚁剑chr编码转换 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.蚁剑chr编码转换.executor&quot;: &quot;Run&quot;,
-    &quot;Python.词频统计.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;ToolWindowPython 软件包.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Study/项目代码/CTF/awd&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.1upload (1).executor": "Run",
+    "Python.1扫描存活 (1).executor": "Run",
+    "Python.1扫描存活 (2).executor": "Run",
+    "Python.1扫描存活.executor": "Run",
+    "Python.2get_flag (1).executor": "Run",
+    "Python.2命令执行.executor": "Run",
+    "Python.3提交flag (1).executor": "Run",
+    "Python.3提交flag.executor": "Run",
+    "Python.DangerousRSA.executor": "Run",
+    "Python.DeepSeekSelfTool.executor": "Run",
+    "Python.PCRE回溯次数限制绕过RCE.executor": "Run",
+    "Python.QR.executor": "Run",
+    "Python.RSA.executor": "Run",
+    "Python.RSA2.executor": "Run",
+    "Python.RSA3.executor": "Run",
+    "Python.RSAde.executor": "Run",
+    "Python.[强网杯 2019]高明的黑客.executor": "Run",
+    "Python.[极客大挑战 2019]FinalSQL.executor": "Run",
+    "Python.ascii.executor": "Run",
+    "Python.attachment.executor": "Run",
+    "Python.baby_rsa.executor": "Run",
+    "Python.baby_rsa2.executor": "Run",
+    "Python.baopo.executor": "Run",
+    "Python.base64.executor": "Run",
+    "Python.base64隐写.executor": "Run",
+    "Python.bbb.executor": "Run",
+    "Python.brainbuck解码.executor": "Run",
+    "Python.crypto-rsa3.executor": "Run",
+    "Python.cs流量分析.executor": "Run",
+    "Python.excel (1).executor": "Run",
+    "Python.excel.executor": "Run",
+    "Python.factor.executor": "Run",
+    "Python.fetus_pcap.executor": "Run",
+    "Python.fff.executor": "Run",
+    "Python.flask session 伪造.executor": "Run",
+    "Python.get_flag.executor": "Run",
+    "Python.ip.executor": "Run",
+    "Python.ip_ping探测.executor": "Run",
+    "Python.ip探测 (1).executor": "Run",
+    "Python.ip端口 (1).executor": "Run",
+    "Python.ip端口(1).executor": "Run",
+    "Python.ip端口.executor": "Run",
+    "Python.kaisa.executor": "Run",
+    "Python.keyboard.executor": "Run",
+    "Python.n&c.executor": "Run",
+    "Python.nengyuandasai.executor": "Run",
+    "Python.pacp.executor": "Run",
+    "Python.png_change_height_with.executor": "Run",
+    "Python.png_height.executor": "Run",
+    "Python.rar.executor": "Run",
+    "Python.rot.executor": "Run",
+    "Python.rsa1.executor": "Run",
+    "Python.rsa2.executor": "Run",
+    "Python.rsa4.executor": "Run",
+    "Python.rsa_output.executor": "Run",
+    "Python.rsa_roll.executor": "Run",
+    "Python.sha256.executor": "Run",
+    "Python.sha256_md5.executor": "Run",
+    "Python.sql布尔.executor": "Run",
+    "Python.sql布尔注入.executor": "Run",
+    "Python.ssti查找类索引.executor": "Run",
+    "Python.task.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.upload.executor": "Run",
+    "Python.vigenere.executor": "Run",
+    "Python.xor.executor": "Run",
+    "Python.关闭通防.executor": "Run",
+    "Python.关闭通防参数.executor": "Run",
+    "Python.尝试修改对方主机密码.executor": "Run",
+    "Python.布尔盲注.executor": "Run",
+    "Python.批量攻击.executor": "Run",
+    "Python.提交flag.executor": "Run",
+    "Python.改WatchBird密码.executor": "Run",
+    "Python.改服务器密码.executor": "Run",
+    "Python.文件包含.executor": "Run",
+    "Python.维吉尼亚解密工具.executor": "Run",
+    "Python.自动flag (1).executor": "Run",
+    "Python.自动flag.executor": "Run",
+    "Python.自动传马.executor": "Run",
+    "Python.自动挂马.executor": "Run",
+    "Python.蚁剑chr编码转换 (1).executor": "Run",
+    "Python.蚁剑chr编码转换.executor": "Run",
+    "Python.词频统计.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ToolWindowPython 软件包.ShowToolbar": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/Study/项目代码/CTF/awd",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Study\项目代码\CTF\awd" />
@@ -199,7 +191,7 @@
       <recent name="D:\Study\项目代码\CTF\awd\pwn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ip_ping探测">
+  <component name="RunManager" selected="Python.ip探测 (1)">
     <configuration name="自动挂马" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CTF" />
       <option name="ENV_FILES" value="" />
@@ -217,6 +209,31 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/awd/web/rce/自动挂马.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1扫描存活" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CTF" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/awd/web/rce" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/awd/web/rce/1扫描存活.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -250,7 +267,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="保存cookie" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ip探测 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CTF" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -266,32 +283,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="D:\Study\项目代码\CTF\awd\通防开关\保存cookie.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ip探测" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CTF" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/awd/通防开关" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="D:\Study\项目代码\CTF\awd\通防开关\ip探测.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/awd/通防开关/ip探测.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -377,19 +369,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.baby_rsa" />
+      <item itemvalue="Python.1扫描存活" />
+      <item itemvalue="Python.ip探测 (1)" />
       <item itemvalue="Python.自动挂马" />
-      <item itemvalue="Python.保存cookie" />
-      <item itemvalue="Python.ip探测" />
       <item itemvalue="Python.ip_ping探测" />
       <item itemvalue="Python.异或字典绕过waf" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ip探测 (1)" />
+        <item itemvalue="Python.1扫描存活" />
         <item itemvalue="Python.ip_ping探测" />
         <item itemvalue="Python.自动挂马" />
         <item itemvalue="Python.异或字典绕过waf" />
-        <item itemvalue="Python.ip探测" />
-        <item itemvalue="Python.ip探测" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +503,8 @@
       <workItem from="1782610490993" duration="616000" />
       <workItem from="1782613295420" duration="59000" />
       <workItem from="1782657268420" duration="3860000" />
-      <workItem from="1782663062531" duration="436000" />
+      <workItem from="1782663062531" duration="516000" />
+      <workItem from="1782696775482" duration="6932000" />
     </task>
     <task id="LOCAL-00001" summary="密码学的心声">
       <option name="closed" value="true" />
@@ -745,7 +738,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782567996392</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="加白名单功能">
+      <option name="closed" value="true" />
+      <created>1782663567540</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1782663567540</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -798,30 +799,31 @@
     <MESSAGE value="awd pwn" />
     <MESSAGE value="reverse" />
     <MESSAGE value="awd" />
-    <option name="LAST_COMMIT_MESSAGE" value="awd" />
+    <MESSAGE value="加白名单功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="加白名单功能" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CTF$task.coverage" NAME="task 覆盖结果" MODIFIED="1730531787646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../34076267da2724b5721deb28afca122b" />
     <SUITE FILE_PATH="coverage/CTF$ip_1_.coverage" NAME="ip端口(1) 覆盖结果" MODIFIED="1782550574586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/通防开关" />
+    <SUITE FILE_PATH="coverage/CTF$task.coverage" NAME="task 覆盖结果" MODIFIED="1730531787646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../34076267da2724b5721deb28afca122b" />
     <SUITE FILE_PATH="coverage/CTF$fff.coverage" NAME="fff 覆盖结果" MODIFIED="1734662937333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/rsa" />
     <SUITE FILE_PATH="coverage/CTF$RSAde.coverage" NAME="RSAde 覆盖结果" MODIFIED="1705756397846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/其他" />
     <SUITE FILE_PATH="coverage/CTF$keyboard.coverage" NAME="keyboard 覆盖结果" MODIFIED="1766403535646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/其他" />
     <SUITE FILE_PATH="coverage/CTF$pacp.coverage" NAME="pacp 覆盖结果" MODIFIED="1719276123121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blue" />
     <SUITE FILE_PATH="coverage/CTF$RSA3.coverage" NAME="RSA3 覆盖结果" MODIFIED="1705748064470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/其他" />
-    <SUITE FILE_PATH="coverage/CTF$sha256.coverage" NAME="sha256 覆盖结果" MODIFIED="1744866792998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto" />
     <SUITE FILE_PATH="coverage/CTF$3flag__1_.coverage" NAME="3提交flag (1) 覆盖结果" MODIFIED="1781914984218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/pwn" />
+    <SUITE FILE_PATH="coverage/CTF$sha256.coverage" NAME="sha256 覆盖结果" MODIFIED="1744866792998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto" />
     <SUITE FILE_PATH="coverage/CTF$png_height.coverage" NAME="png_height 覆盖结果" MODIFIED="1735110793495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/CTF$xor.coverage" NAME="xor 覆盖结果" MODIFIED="1782373029041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/CTF$1__1_.coverage" NAME="1扫描存活 (1) 覆盖结果" MODIFIED="1782118554649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/web/rce" />
     <SUITE FILE_PATH="coverage/CTF$.coverage" NAME="自动挂马 覆盖结果" MODIFIED="1782659393952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/web/rce" />
     <SUITE FILE_PATH="coverage/CTF$kaisa.coverage" NAME="kaisa 覆盖结果" MODIFIED="1731504777696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/凯撒密码" />
-    <SUITE FILE_PATH="coverage/CTF$rar.coverage" NAME="rar 覆盖结果" MODIFIED="1782358576757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/CTF$rsa1.coverage" NAME="rsa1 覆盖结果" MODIFIED="1765467455672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/rsa" />
     <SUITE FILE_PATH="coverage/CTF$nengyuandasai.coverage" NAME="nengyuandasai 覆盖结果" MODIFIED="1744858036353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/rsa" />
+    <SUITE FILE_PATH="coverage/CTF$rsa1.coverage" NAME="rsa1 覆盖结果" MODIFIED="1765467455672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/rsa" />
+    <SUITE FILE_PATH="coverage/CTF$rar.coverage" NAME="rar 覆盖结果" MODIFIED="1782358576757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/CTF$flask_session_.coverage" NAME="flask session 伪造 覆盖结果" MODIFIED="1731504810738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
     <SUITE FILE_PATH="coverage/CTF$brainbuck.coverage" NAME="brainbuck解码 覆盖结果" MODIFIED="1765680750405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto" />
     <SUITE FILE_PATH="coverage/CTF$1upload__1_.coverage" NAME="1upload (1) 覆盖结果" MODIFIED="1782178365198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/web/后门" />
-    <SUITE FILE_PATH="coverage/CTF$ip_ping.coverage" NAME="ip_ping探测 覆盖结果" MODIFIED="1782663404167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/攻击主机" />
+    <SUITE FILE_PATH="coverage/CTF$ip_ping.coverage" NAME="ip_ping探测 覆盖结果" MODIFIED="1782697963416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/攻击主机" />
     <SUITE FILE_PATH="coverage/CTF$chr.coverage" NAME="蚁剑chr编码转换 覆盖结果" MODIFIED="1717578239483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../landui" />
     <SUITE FILE_PATH="coverage/CTF$QR.coverage" NAME="QR 覆盖结果" MODIFIED="1725433213583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/CTF$2get_flag__1_.coverage" NAME="2get_flag (1) 覆盖结果" MODIFIED="1782127418162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/web/后门" />
@@ -832,7 +834,7 @@
     <SUITE FILE_PATH="coverage/CTF$flag.coverage" NAME="提交flag 覆盖结果" MODIFIED="1782127968345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/老师的脚本" />
     <SUITE FILE_PATH="coverage/CTF$flag__1_.coverage" NAME="自动flag (1) 覆盖结果" MODIFIED="1781826856349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/web/rce" />
     <SUITE FILE_PATH="coverage/CTF$sha256_md5.coverage" NAME="sha256_md5 覆盖结果" MODIFIED="1753861648250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto" />
-    <SUITE FILE_PATH="coverage/CTF$ip__1_.coverage" NAME="ip端口 (1) 覆盖结果" MODIFIED="1782550850238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/通防开关" />
+    <SUITE FILE_PATH="coverage/CTF$ip__1_.coverage" NAME="ip探测 (1) 覆盖结果" MODIFIED="1782704089452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/通防开关" />
     <SUITE FILE_PATH="coverage/CTF$get_flag.coverage" NAME="get_flag 覆盖结果" MODIFIED="1782121714733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/web/后门" />
     <SUITE FILE_PATH="coverage/CTF$DeepSeekSelfTool.coverage" NAME="DeepSeekSelfTool 覆盖结果" MODIFIED="1740640638444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../landui/blueteamtool/DeepSeekSelfTool-main" />
     <SUITE FILE_PATH="coverage/CTF$RSA2.coverage" NAME="RSA2 覆盖结果" MODIFIED="1705748269053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/其他" />
@@ -842,7 +844,7 @@
     <SUITE FILE_PATH="coverage/CTF$__2019_.coverage" NAME="[强网杯 2019]高明的黑客 覆盖结果" MODIFIED="1754382199637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
     <SUITE FILE_PATH="coverage/CTF$upload.coverage" NAME="upload 覆盖结果" MODIFIED="1782122154936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/web/后门" />
     <SUITE FILE_PATH="coverage/CTF$DangerousRSA.coverage" NAME="DangerousRSA 覆盖结果" MODIFIED="1721286112170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/rsa" />
-    <SUITE FILE_PATH="coverage/CTF$1.coverage" NAME="1扫描存活 覆盖结果" MODIFIED="1782460885495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/pwn" />
+    <SUITE FILE_PATH="coverage/CTF$1.coverage" NAME="1扫描存活 覆盖结果" MODIFIED="1782699328467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/awd/web/rce" />
     <SUITE FILE_PATH="coverage/CTF$rsa_roll.coverage" NAME="rsa_roll 覆盖结果" MODIFIED="1705753897743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crypto/其他" />
     <SUITE FILE_PATH="coverage/CTF$sql.coverage" NAME="sql布尔 覆盖结果" MODIFIED="1767083405281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sql" />
     <SUITE FILE_PATH="coverage/CTF$excel.coverage" NAME="excel 覆盖结果" MODIFIED="1721383060504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blue" />
