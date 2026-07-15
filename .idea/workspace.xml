@@ -4,245 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3a4be7f-5277-4ac6-9510-ca3445c3b37a" name="Changes" comment="修改">
-      <change afterPath="$PROJECT_DIR$/awd/攻击主机/ip.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awd/攻击主机/sss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awd/攻击主机/www" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt1/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt1/32_fmt1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt1/32_fmt1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt1/ld-2.23.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt1/libc-2.23.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt2/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt2/32_fmt2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt2/32_fmt2.i64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt2/32_fmt2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt2/ld-2.23.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/32_fmt2/libc-2.23.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/cat/attachments/attachments.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/cat/attachments/attachments/cat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/cat/attachments/attachments/ld-linux-x86-64.so.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/cat/attachments/attachments/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/cat/exp/cat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/cat/exp/exp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/cat/exp/ld-linux-x86-64.so.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/cat/exp/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/cat/writeup/writeup.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/ciscn_2019_sw_1/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/ciscn_2019_sw_1/116_ciscn_2019_sw_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/ciscn_2019_sw_1/116_ciscn_2019_sw_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/ciscn_2019_sw_1/core" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/ciscn_2019_sw_1/ld-2.27.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/ciscn_2019_sw_1/libc-2.27.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt0_64/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt0_64/fmt0_64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt0_64/fmt0_64.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt0_64/ld-linux-x86-64.so.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt0_64/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt0_64/re_z3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/flag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/fmt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/fmt1_64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/fmt1_64_patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/ld-2.23.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/libc-2.23.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt1_64/test.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt2_64_s/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt2_64_s/fmt2_64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt2_64_s/fmt2_64.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt2_64_s/fmtstr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt2_64_s/ld-2.27.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmt2_64_s/libc-2.27.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmtstr_payload/fmtstr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmtstr_payload/fmtstr_" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmtstr_payload/ld-2.23.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/fmtstr_payload/libc-2.23.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/ld-2.31.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/pwn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/test/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/test/a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/test/ld-2.31.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/test/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/fmt/签个到吧/test/pwn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/attachment/attachment.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/attachment/attachment/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/attachment/attachment/pwn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/attachment/attachment/pwn.i64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/attachment/attachment/pwn_patched" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/解题思路/exp/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/解题思路/exp/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/解题思路/exp/main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/解题思路/exp/qqqfinal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/guess_game/解题思路/writeup.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/1/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/1/ld-linux-x86-64.so.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/1/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/1/ret2libc_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/1/ret2libc_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/2/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/2/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/2/ld-linux-x86-64.so.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/2/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/2/ret2libc_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/2/ret2libc_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/3/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/3/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/3/ld-2.31.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/3/libc-2.31.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/3/ret2libc_3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/3/ret2libc_3.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2libc/3/ret2libc_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/9byte_nop/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/9byte_nop/2018_treasure" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/9byte_nop/2018_treasure.i64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/9byte_nop/exp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/9byte_nop/exp2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/shellcode1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/shellcode1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/shellcode2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2shellcode/shellcode2_int80.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/360chunqiu2017_smallest/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/360chunqiu2017_smallest/cv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/360chunqiu2017_smallest/smallest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/360chunqiu2017_smallest/smallest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/ciscn_2019_es_7/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/ciscn_2019_es_7/ciscn_2019_es_7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/ciscn_2019_es_7/ciscn_2019_es_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/ciscn_2019_es_7/core" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/ciscn_2019_es_7/cv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/ciscn_2019_es_7/ly.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/ret2syscall/exp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/ret2syscall/ret2syscall" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2sycall/ret2syscall/ret2syscall.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwn2/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwn2/a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwn2/flag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwn2/pwn2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/env&amp;src.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/env&amp;src/dockerfile/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/env&amp;src/dockerfile/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/env&amp;src/dockerfile/bin/flag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/env&amp;src/dockerfile/bin/pwn2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/env&amp;src/dockerfile/ctf.xinetd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/env&amp;src/dockerfile/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/env&amp;src/dockerfile/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/env&amp;src/sourcecode/pwn2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/exp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/例题/ret2text/pwnstack/pwnstack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/比赛题/shop/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/2026-07比赛/比赛题/shop/shop" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwn/attachment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/Catching/attachment/attachment.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/Catching/attachment/attachment/Catching.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/Catching/attachment/attachment/Catching.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/Catching/attachment/attachment/WP_Catching.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/Catching/attachment/attachment/ai_re.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/Catching/writeup/exp/exp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/Catching/writeup/writeup.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/angr_test/angr_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/angr_test/code" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/angr_test/re1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/base64/reverse3/exp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/base64/reverse3/reverse_3.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/base64/reverse3/reverse_3.exe.i64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/base64/换表base/HappySunday.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/base64/换表base/HappySunday.exe.i64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/fakeShelll-rc4/a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/fakeShelll-rc4/exp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/fakeShelll-rc4/fakeShell" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/fakeShelll-rc4/fakeShell.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/open-source/attachment/attachment_1/code.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/open-source/attachment/attachment_2/code" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/open-source/attachment/attachment_3/.gdb_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/open-source/attachment/attachment_3/code" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/open-source/writeup/open-source.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/re_36_easyxorplus/re.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/re_36_easyxorplus/re_36_easyxorplus" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/simple_upx/attachment/simple2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/simple_upx/writeup/image/image-20220411174045058.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/simple_upx/writeup/image/image-20220411174102092.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/simple_upx/writeup/simple-unpack.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/test1/hello" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/test1/hello.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/test1/hello.i" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/test1/hello.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/test1/hello_O0.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/test1/hello_O1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/test1/hello_O2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/test1/hello_O3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/2026-07比赛例题/z3_test/re1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse/device.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/upload-lab17/seed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/upload-lab17/upload-lab17条件竞争.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/capture/capture.pcap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/device_recover/device_recover" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/grid_topology (1)/grid_topology.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/out/out/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/out/out/task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/pwn-1/libc.so.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/pwn-1/pwn2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/web/ssss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/web2/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/web2/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/web2/屏幕截图 2026-07-02 133225.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/web2/屏幕截图 2026-07-02 133250.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/web2/屏幕截图 2026-07-02 133306.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/台区日电量采集表/台区日电量采集表.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/flag.enc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/ca.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/flag.enc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/gateway_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/取证说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/电力运维常用口令.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/writeup.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/jfuck.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/pwn/gues_game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/pwn/guess_game2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/pwn/hellopwn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/pwn/pwnstack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/pwn/ret2libc1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/pwn/ret2text1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/pwn/ret2text2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/pwn/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/reverse/catching.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/reverse/happysunny.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/reverse/reverse_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/reverse/revreseme.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/reverse/xorplus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/rsa1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/例题/rsa2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/个人赛/catching.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/个人赛/ecc-no.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/个人赛/supureise.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/个人赛/web-no.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/个人赛/white-no.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/dccore.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/ezzz.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/fakepassword/fakepasswd.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/fakepassword/fakepasswd/blasting.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/fakepassword/fakepasswd/blasting/true encryption.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/fakepassword/fakepasswd/blasting/true encryption/flag&amp;fake.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/fakepassword/fakepasswd/blasting/true encryption/weakpassword.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/fakepassword/fakepasswd/blasting/true encryption/weakpassword/ffflag.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/probe.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/shop.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/比赛/2026-07北京比赛/真题/团队赛/监控.zip" afterDir="false" />
+    <list default="true" id="e3a4be7f-5277-4ac6-9510-ca3445c3b37a" name="Changes" comment="2026-07 2场比赛">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/web/rce/1扫描存活.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/web/rce/1扫描存活.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/攻击主机/尝试修改对方主机密码.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/攻击主机/尝试修改对方主机密码.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/通防开关/ip探测.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/通防开关/ip探测.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awd/通防开关/保存cookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/awd/通防开关/保存cookie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwn/ret2libc/ret2libc-北京公司比赛.py" beforeDir="false" afterPath="$PROJECT_DIR$/pwn/ret2libc/ret2libc-北京公司比赛.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/比赛/2026-07中电联/台区日电量采集表/台区日电量采集表.csv" beforeDir="false" afterPath="$PROJECT_DIR$/比赛/2026-07中电联/台区采集表/台区采集表.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/flag.enc" beforeDir="false" afterPath="$PROJECT_DIR$/比赛/2026-07中电联/数据网取证包/flag.enc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/比赛/2026-07中电联/数据网取证包/数据网取证包/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/flag.enc" beforeDir="false" afterPath="$PROJECT_DIR$/比赛/2026-07中电联/数据网取证包/数据网取证包/flag.enc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/gateway_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/比赛/2026-07中电联/数据网取证包/数据网取证包/gateway_key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/取证说明.txt" beforeDir="false" afterPath="$PROJECT_DIR$/比赛/2026-07中电联/数据网取证包/数据网取证包/取证说明.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/比赛/2026-07中电联/调度数据网取证包/调度数据网取证包/电力运维常用口令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/比赛/2026-07中电联/数据网取证包/数据网取证包/常用口令.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -972,7 +742,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782704137746</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="2026-07 2场比赛">
+      <option name="closed" value="true" />
+      <created>1784120186175</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1784120186175</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1002,7 +780,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="密码学的心声" />
     <MESSAGE value="base64" />
     <MESSAGE value="文件夹移动" />
     <MESSAGE value="蓝队工具" />
@@ -1027,7 +804,8 @@
     <MESSAGE value="awd" />
     <MESSAGE value="加白名单功能" />
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <MESSAGE value="2026-07 2场比赛" />
+    <option name="LAST_COMMIT_MESSAGE" value="2026-07 2场比赛" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
