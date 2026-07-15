@@ -1,12 +1,12 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
-
+from awd.config import ownip_c
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 # 配置参数
 IP_RANGE = range(0, 255)
-PORTS = [80]  # 可扩展常见Web端口
+PORTS = [8080]  # 可扩展常见Web端口
 TIMEOUT = 3
 THREADS = 20
 # 精确屏蔽 InsecureRequestWarning 警告
@@ -19,7 +19,7 @@ def process_host():  # 探活
 
     """并发探活，返回可达IP列表"""
     live_ips = []
-    base_ips = [f"192.168.{i}.2" for i in IP_RANGE]
+    base_ips = [f"172.30.132.{i}" for i in IP_RANGE if i !=ownip_c]
 
     def check_ip(ip):
         for port in PORTS:

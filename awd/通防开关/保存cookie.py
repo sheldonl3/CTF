@@ -59,7 +59,7 @@ def scan_task():
     success_result = []
     # 读取ip.txt
     try:
-        with open('./ip.txt', 'r', encoding='utf-8') as file:
+        with open('../攻击主机/ip.txt', 'r', encoding='utf-8') as file:
             for raw_line in file:
                 ip_addr = raw_line.strip()
                 if ip_addr:
@@ -99,7 +99,7 @@ def scan_task():
     # 剔除成功IP，重写回ip.txt
     success_ip_set = {x["ip"] for x in success_result}
     fail_ip_list = [ip for ip in all_ip if ip not in success_ip_set]
-    with open('./ip.txt', 'w', encoding='utf-8') as f:
+    with open('../攻击主机/ip.txt', 'w', encoding='utf-8') as f:
         for ip in fail_ip_list:
             f.write(ip + "\n")
 

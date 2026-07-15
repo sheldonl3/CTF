@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+  <rect width="1200" height="780" fill="#f7fbff"/>
+  <text x="60" y="70" font-size="40" fill="#0f3d66">北海配网拓扑图</text>
+  <line x1="180" y1="180" x2="470" y2="180" stroke="#4c78a8" stroke-width="6"/>
+  <line x1="470" y1="180" x2="820" y2="250" stroke="#4c78a8" stroke-width="6"/>
+  <line x1="180" y1="180" x2="360" y2="470" stroke="#4c78a8" stroke-width="6"/>
+  <line x1="360" y1="470" x2="820" y2="520" stroke="#4c78a8" stroke-width="6"/>
+  <circle cx="180" cy="180" r="46" fill="#dbeafe" stroke="#1d4ed8" stroke-width="4"/>
+  <circle cx="470" cy="180" r="46" fill="#dbeafe" stroke="#1d4ed8" stroke-width="4"/>
+  <circle cx="820" cy="250" r="46" fill="#dbeafe" stroke="#1d4ed8" stroke-width="4"/>
+  <circle cx="360" cy="470" r="46" fill="#dbeafe" stroke="#1d4ed8" stroke-width="4"/>
+  <circle cx="820" cy="520" r="46" fill="#dbeafe" stroke="#1d4ed8" stroke-width="4"/>
+  <text x="140" y="188" font-size="22" fill="#1f2937">调度中心</text>
+  <text x="430" y="188" font-size="22" fill="#1f2937">城北站</text>
+  <text x="785" y="258" font-size="22" fill="#1f2937">沿海站</text>
+  <text x="325" y="478" font-size="22" fill="#1f2937">工业园站</text>
+  <text x="790" y="528" font-size="22" fill="#1f2937">银滩站</text>
+  <g id="hidden-layer" style="display:none">
+    <text x="100" y="740">flag{8yHepJC3vx89X0Ni8NOkkGFjugm9b4vQ}</text>
+  </g>
+</svg>

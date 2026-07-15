@@ -9,7 +9,7 @@ def change_password_via_shell(hostname):
     """
     port = 22
     username = 'ctf'
-    old_password = '2233@#s'
+    old_password = 'ctf'
     new_password = 'HLdf@2731'
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -28,7 +28,7 @@ def change_password_via_shell(hostname):
             shell.recv(4096)
 
         # 3. 发送 passwd 命令
-        print("执行 passwd 命令...")
+        print(hostname+"执行 passwd 命令...")
         shell.send('passwd\n')
         time.sleep(2)
 

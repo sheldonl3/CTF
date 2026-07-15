@@ -1,0 +1,46 @@
+body>
+<h1>Welcome, Admin</h1>
+
+<div class="box">
+<p><b>Log Viewer</b> — View server log files</p>
+<?php
+$prefs = isset($_COOKIE['prefs']) ? $_COOKIE['prefs'] : '';
+parse_str($prefs);
+
+$log_dir = b64_decode('L2xvZy8=');
+
+$forbidden = array('flag', 'root', 'etc', 'proc', 'opt');
+if (isset($_GET['log'])) {
+    $log = $_GET['log'];
+    $blocked = false;
+    foreach ($forbidden as $f) {
+        if (stripos($log, $f) !== false) {
+            $blocked = true;
+            break;
+        }
+    }
+    if ($blocked) {
+        echo "<p style='color:red'>Access denied: path contains forbidden pattern.</p>";
+    } else {
+        $full_path = $log_dir . $log;
+        if (file_exists($full_path)) {
+            echo "<p>Viewing: " . htmlspecialchars($full_path) . "</p>";
+            echo "<pre>" . htmlspecialchars(file_get_contents($full_path)) . "</pre>";
+        } else {
+            echo "<p style='color:orange'>File not found: " . htmlspecialchars($full_path) . "</p>";
+        }
+    }
+}
+?>
+<form method="GET">
+<label>Log file name:</label><br>
+<input type="text" name="log" placeholder="app.log"><br><br>
+<button type="submit">View Log</button>
+</form>
+</div>
+
+<div class="box">
+<a href="logout.php">Logout</a>
+</div>
+</body>
+</html>
