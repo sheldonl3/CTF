@@ -10,5 +10,4 @@ c=509962069259610194152560033947435941060614738650327920730359549258750560797626
 phi = (p-1)*(q-1)
 d = gmpy2.invert(e,phi)
 m = gmpy2.powmod(c,d,p*q)
-
-print(binascii.unhexlify(hex(m)[2:]))
+print(bytes.fromhex(hex(m)[2:]))
